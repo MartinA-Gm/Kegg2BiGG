@@ -1,18 +1,18 @@
 # KEGG API Configuration
 kegg:
-  base_url: "https://rest.kegg.jp"
-  timeout: 30  # seconds
+  base_url: "https://rest.kegg.jp"  # KEGG API base URL
+  timeout: 30                        # API request timeout in seconds
 
 # Output Configuration
 output:
-  data_dir: "data"
-  file_format: "csv"
-  index: false
+  data_dir: "data"                  # Directory for output files
+  file_format: "csv"                # Output file format
+  index: false                      # Whether to include index in output
 
 # Reaction Configuration
 reaction:
-  default_id: "R00200"  # Example reaction ID
-  fields:
+  default_id: "R00200"             # Default reaction ID for examples
+  fields:                          # Fields to include in reaction data
     - reaction_id
     - name
     - definition
@@ -20,21 +20,29 @@ reaction:
     - reactants
     - products
     - is_reversible
-
+    - enzyme
+    - pathways
+    - modules
+    - orthology
+    - dblinks
 
 # Compound Configuration
 compound:
-  default_id: "C00002"  # Example compound ID (ATP)
-  fields:
+  default_id: "C00031"             # Default compound ID for examples
+  fields:                          # Fields to include in compound data
     - compound_id
     - name
     - formula
     - exact_mass
     - molecular_weight
-
+    - reactions
+    - enzymes
+    - pathways
+    - modules
+    - dblinks
 
 # Logging Configuration
 logging:
-  level: "INFO"
-  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-  file: "logs/kegg_fetch.log"
+  level: "INFO"                    # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"  # Log message format
+  file: "logs/kegg_fetch.log"      # Log file path
