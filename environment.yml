@@ -1,0 +1,11 @@
+name: kegg2bigg
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - requests
+  - pip
+  - pip:
+    - setuptools>=75.8.0
+    - wheel>=0.45.1 
