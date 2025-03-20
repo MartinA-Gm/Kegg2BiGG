@@ -143,7 +143,7 @@ if __name__ == "__main__":
         df = get_reaction_info(reaction_id)
         
         # Save to CSV
-        df.to_csv(f"kegg_reaction_{reaction_id}.csv", index=False)
+        df.to_csv(f"./data/kegg_reaction_{reaction_id}.csv", index=False)
         print(f"\nData saved to kegg_reaction_{reaction_id}.csv")
     except Exception as e:
         print(f"Error: {e}")

@@ -64,11 +64,10 @@ if __name__ == "__main__":
     compound_id = "C00002"  # ATP
     try:
         df = get_compound_info(compound_id)
-        print("\nCompound Information DataFrame:")
-        print(df)
+
         
         # Save to CSV
-        df.to_csv(f"kegg_compound_{compound_id}.csv", index=False)
+        df.to_csv(f"./data/kegg_compound_{compound_id}.csv", index=False)
         print(f"\nData saved to kegg_compound_{compound_id}.csv")
     except Exception as e:
         print(f"Error: {e}")

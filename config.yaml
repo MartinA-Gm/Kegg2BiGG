@@ -1,0 +1,40 @@
+# KEGG API Configuration
+kegg:
+  base_url: "https://rest.kegg.jp"
+  timeout: 30  # seconds
+
+# Output Configuration
+output:
+  data_dir: "data"
+  file_format: "csv"
+  index: false
+
+# Reaction Configuration
+reaction:
+  default_id: "R00200"  # Example reaction ID
+  fields:
+    - reaction_id
+    - name
+    - definition
+    - equation
+    - reactants
+    - products
+    - is_reversible
+
+
+# Compound Configuration
+compound:
+  default_id: "C00002"  # Example compound ID (ATP)
+  fields:
+    - compound_id
+    - name
+    - formula
+    - exact_mass
+    - molecular_weight
+
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/kegg_fetch.log"
