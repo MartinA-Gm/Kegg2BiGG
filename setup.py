@@ -7,11 +7,11 @@ setup(
     name="kegg-data-fetcher",
     version="1.0.0",
     author="Martin Amiens",
-    author_email="martin.amiens@example.com",
+    author_email="martin.a@gourmey.com",
     description="A Python package for fetching and parsing KEGG reaction and compound information",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/martinamiens/kegg-data-fetcher",
+    url="https://github.com/MartinA-Gm/Kegg2BiGG/actions/runs/13967981125",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
