@@ -5,17 +5,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="kegg-data-fetcher",
-    version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    version="1.0.0",
+    author="Martin Amiens",
+    author_email="martin.amiens@example.com",
     description="A Python package for fetching and parsing KEGG reaction and compound information",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/kegg-data-fetcher",
+    url="https://github.com/martinamiens/kegg-data-fetcher",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
