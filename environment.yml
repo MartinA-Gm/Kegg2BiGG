@@ -4,7 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - requests
+  - pandas>=2.0.0
+  - requests>=2.31.0
   - pip
   - pip:
     - setuptools>=75.8.0
